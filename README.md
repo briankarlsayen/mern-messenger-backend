@@ -1,7 +1,8 @@
 # mern-messenger-backend
-[mern-messenger-frontend](https://github.com/briankarlsayen/mern-messenger-frontend)
 
 uses express, mongoose, dotenv. pusher is used for realtime chat update.
+
+check this [mern-messenger-frontend](https://github.com/briankarlsayen/mern-messenger-frontend) for the front-end.
 
 ## Start the project
 
