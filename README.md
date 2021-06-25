@@ -1,4 +1,4 @@
-# mern-messenger-backend
+# Messenger Clone
 
 uses express, mongoose, dotenv. pusher is used for realtime chat update.
 
