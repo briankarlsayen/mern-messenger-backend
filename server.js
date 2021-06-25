@@ -2,6 +2,8 @@ import express from 'express';
 import mongoose from 'mongoose';
 import Pusher from 'pusher';
 import cors from 'cors';
+import dotenv from 'dotenv'
+dotenv.config()
 
 import mongoMessages from './messageModel.js';
 
@@ -22,7 +24,7 @@ app.use(express.json());
 app.use(cors());
 
 //db config
-const mongoURI = "mongodb+srv://messenger-admin:OeLDG5XEeb7iuHG4@cluster0.eygh2.mongodb.net/<messengerDB>?retryWrites=true&w=majority"
+const mongoURI = process.env.MONGODB_URL
 mongoose.connect(mongoURI, {
     useCreateIndex: true,
     useNewUrlParser: true,
